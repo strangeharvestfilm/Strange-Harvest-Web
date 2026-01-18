@@ -171,15 +171,14 @@ export const sitecopy = {
     productTitle: "Strange Harvest (DVD)",
     description: "Official DVD release distributed by Sony Pictures Home Entertainment. Manufactured on demand.",
     image: "/images/still-strange-harvest-poster.jpg",
-    note: "Looking for something special? Sign up to be notified about the limited-edition VHS and Strange Harvest exclusives.",
-    cta: { label: "View on Amazon", href: "https://www.amazon.com/", target: "_blank" },
+    cta: { label: "View on Amazon", href: "https://www.amazon.com/Strange-Harvest-Stuart-Ortiz/dp/B0FSMGS86V/ref=sr_1_1?crid=3MEPFFGPVKEM4&dib=eyJ2IjoiMSJ9.wKKvBTt3a79y5PdK9kfPjEDogznzPzIjEJhY4NzKGzDmfLB_hGnjjtNctm0t9N8raH6bVMMEEkTgHioXFfqEcgoCzCFly1CQ-K5k0qM9Wcv7XRxOuQuaDQ8D7yNVrOTtCBaq8WB_s1gh-axVW2i1IK6gd_8qTyt_8Lg_mpakl6DnvnRDK6kD4oYHdhPtCI7pNFeaXzamO35EtoyuX71ARS25EPMTEsglBNYP-8LXY5w.t9IPUet8BAUX-k5oYES1X0jiXOfPSMbPAwnbJysWGw8&dib_tag=se&keywords=strange+harvest&qid=1768728090&sprefix=strange+harves%2Caps%2C204&sr=8-1", target: "_blank" },
     disclaimer: "*Sold and fulfilled by Amazon.",
   },
 
   merch: {
     title: "Official Merch",
     blurb: "Wear the terror. Carry the mystery. Exclusive Strange Harvest merchandise for true believers.",
-    shopifyUrl: "https://strangeharvestfilm.myshopify.com",
+    shopifyUrl: "https://strangeharvestfilm.myshopify.com/pages/customer-notifications",
   },
 
   castCrew: {
@@ -251,7 +250,7 @@ export const sitecopy = {
             { name: "Matthew M Garcia", imdb: "https://www.imdb.com/name/nm4547717/" },
             { name: "James Pearce", imdb: "https://www.imdb.com/" },
             { name: "Stuart Gallacher", imdb: "https://www.imdb.com/" },
-            { name: "Tony Copolilo", imdb: "https://www.imdb.com/" },
+            { name: "Tony Copolillo", imdb: "https://www.imdb.com/name/nm1949663/" },
           ],
         },
       ],

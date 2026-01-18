@@ -51,9 +51,10 @@ export default function Merch() {
               target="_blank" 
               rel="noreferrer"
               className="cta primary"
-              style={{ marginTop: '24px', display: 'inline-block' }}
+              style={{ marginTop: '24px', display: 'inline-flex', alignItems: 'center', gap: '8px' }}
             >
-              Visit Store Directly
+              <img src="/images/svgcons/still-icon-notify.svg" alt="" style={{ width: '20px', height: '20px', filter: 'brightness(0) invert(1)' }} />
+              Notify me
             </a>
           </div>
         </div>

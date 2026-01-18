@@ -28,8 +28,6 @@ export default function HomeVideo() {
           <p className="homeVideoDisclaimer">{homeVideo.disclaimer}</p>
         </div>
       </div>
-
-      <p className="homeVideoNote">{homeVideo.note}</p>
     </section>
   );
 }
