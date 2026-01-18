@@ -1,0 +1,10 @@
+your-project/
+├─ .gitignore
+├─ package.json
+├─ package-lock.json
+├─ vite.config.ts
+├─ index.html
+├─ src/
+│  ├─ main.tsx
+│  └─ App.tsx
+└─ public/
