@@ -517,6 +517,96 @@ section:first-of-type {
   color: rgba(255, 255, 255, 0.78);
 }
 
+/* Product Grid Styles */
+.merchGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 32px;
+  max-width: 1200px;
+  margin: 40px auto 0;
+  padding: 0 20px;
+}
+
+.merchCard {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.merchCard:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.merchCardImage {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.merchCardImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.merchCard:hover .merchCardImage img {
+  transform: scale(1.05);
+}
+
+.merchCardContent {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.merchCardTitle {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: hsl(var(--foreground));
+  margin: 0;
+  line-height: 1.3;
+}
+
+.merchCardPrice {
+  font-size: 20px;
+  font-weight: 600;
+  color: hsl(var(--primary));
+  margin: 0;
+}
+
+.merchCardContent .cta {
+  margin-top: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.merchLoading {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.merchLoading p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+}
+
+/* Legacy iframe styles (kept for fallback) */
 .merchStoreWrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -583,6 +673,12 @@ section:first-of-type {
 }
 
 @media (max-width: 768px) {
+  .merchGrid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 24px;
+    padding: 0 16px;
+  }
+
   .merchStoreIframe {
     min-height: 600px;
   }

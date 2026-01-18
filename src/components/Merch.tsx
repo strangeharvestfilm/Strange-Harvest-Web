@@ -1,17 +1,33 @@
 import { sitecopy } from "./sitecopy";
 import { useState, useEffect } from "react";
+import { getProducts, getCheckoutUrl, formatPrice, type ShopifyProduct } from "../services/shopify";
 
 export default function Merch() {
   const { merch } = sitecopy;
-  const [showFallback, setShowFallback] = useState(false);
+  const [products, setProducts] = useState<ShopifyProduct[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
-    // Show fallback after 5 seconds if iframe hasn't loaded properly
-    const timer = setTimeout(() => {
-      setShowFallback(true);
-    }, 5000);
+    const fetchProducts = async () => {
+      try {
+        setLoading(true);
+        const productsData = await getProducts();
+        setProducts(productsData);
+        
+        // Show error state if no products returned (likely due to missing credentials)
+        if (productsData.length === 0) {
+          setError(true);
+        }
+      } catch (err) {
+        console.error("Failed to load products:", err);
+        setError(true);
+      } finally {
+        setLoading(false);
+      }
+    };
 
-    return () => clearTimeout(timer);
+    fetchProducts();
   }, []);
 
   return (
@@ -19,7 +35,13 @@ export default function Merch() {
       <h2>{merch.title}</h2>
       <p className="merchBlurb">{merch.blurb}</p>
       
-      {showFallback ? (
+      {loading && (
+        <div className="merchLoading">
+          <p>Loading merchandise...</p>
+        </div>
+      )}
+
+      {error && !loading && (
         <div className="merchComingSoon">
           <div className="comingSoonContent">
             <h3>Merch Coming Soon</h3>
@@ -35,21 +57,41 @@ export default function Merch() {
             </a>
           </div>
         </div>
-      ) : (
-        <div className="merchStoreWrapper">
-          <iframe
-            src={merch.shopifyUrl}
-            className="merchStoreIframe"
-            title="Strange Harvest Merchandise Store"
-            frameBorder="0"
-            scrolling="yes"
-            onLoad={() => setShowFallback(false)}
-          />
-          <div className="merchStoreFallbackLink">
-            <a href={merch.shopifyUrl} target="_blank" rel="noreferrer">
-              Having trouble viewing the store? Click here to open in a new window →
-            </a>
-          </div>
+      )}
+
+      {!loading && !error && products.length > 0 && (
+        <div className="merchGrid">
+          {products.map((product) => {
+            const imageUrl = product.images.edges[0]?.node.url;
+            const imageAlt = product.images.edges[0]?.node.altText || product.title;
+            const price = formatPrice(
+              product.priceRange.minVariantPrice.amount,
+              product.priceRange.minVariantPrice.currencyCode
+            );
+            const checkoutUrl = getCheckoutUrl(product.handle);
+
+            return (
+              <article key={product.id} className="merchCard">
+                {imageUrl && (
+                  <div className="merchCardImage">
+                    <img src={imageUrl} alt={imageAlt} loading="lazy" />
+                  </div>
+                )}
+                <div className="merchCardContent">
+                  <h3 className="merchCardTitle">{product.title}</h3>
+                  <p className="merchCardPrice">{price}</p>
+                  <a
+                    href={checkoutUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="cta primary"
+                  >
+                    Buy Now
+                  </a>
+                </div>
+              </article>
+            );
+          })}
         </div>
       )}
     </section>
