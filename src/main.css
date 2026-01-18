@@ -314,7 +314,7 @@ section:first-of-type {
 .siteHeaderInner {
   max-width: 100%;
   margin: 0 auto;
-  padding: 14px 40px;
+  padding: 18px 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -324,16 +324,17 @@ section:first-of-type {
 .brand {
   font-family: var(--font-display);
   font-weight: 700;
+  font-size: 18px;
   letter-spacing: 0.02em;
   color: #fff;
   text-decoration: none;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
 .brandSymbol {
-  width: 24px;
+  width: 32px;
   height: auto;
   opacity: 1;
   filter: brightness(1.2);
@@ -341,17 +342,18 @@ section:first-of-type {
 
 .nav {
   display: flex;
-  gap: 18px;
+  gap: 24px;
   flex: 1;
   justify-content: center;
 }
 
 .nav a {
-  font-family: var(--font-display);
+  font-family: system-ui, -apple-system, sans-serif;
   color: rgba(255, 255, 255, 0.82);
   text-decoration: none;
-  font-size: 14px;
-  letter-spacing: 0.02em;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
 }
 
 .nav a:hover {
@@ -366,9 +368,108 @@ section:first-of-type {
   justify-content: center;
 }
 
+.cartIcon svg {
+  width: 28px;
+  height: 28px;
+}
+
 .cartIcon:hover {
   color: hsl(0, 75%, 55%);
   transform: scale(1.1);
+}
+
+@media (max-width: 520px) {
+  .siteHeaderInner {
+    padding: 14px 40px;
+  }
+  
+  .brand {
+    font-size: 16px;
+    gap: 10px;
+  }
+  
+  .brandSymbol {
+    width: 24px;
+  }
+  
+  .nav {
+    gap: 12px;
+  }
+  
+  .nav a {
+    font-size: 13px;
+  }
+  
+  .cartIcon svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.cartIcon:hover {
+  color: hsl(0, 75%, 55%);
+  transform: scale(1.1);
+}
+
+@media (max-width: 520px) {
+  .siteHeaderInner {
+    padding: 14px 40px;
+  }
+  
+  .brand {
+    font-size: 16px;
+    gap: 10px;
+  }
+  
+  .brandSymbol {
+    width: 24px;
+  }
+  
+  .nav {
+    gap: 12px;
+  }
+  
+  .nav a {
+    font-size: 13px;
+  }
+  
+  .cartIcon svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.cartIcon:hover {
+  color: hsl(0, 75%, 55%);
+  transform: scale(1.1);
+}
+
+@media (max-width: 520px) {
+  .siteHeaderInner {
+    padding: 14px 40px;
+  }
+  
+  .brand {
+    font-size: 16px;
+    gap: 10px;
+  }
+  
+  .brandSymbol {
+    width: 24px;
+  }
+  
+  .nav {
+    gap: 12px;
+  }
+  
+  .nav a {
+    font-size: 13px;
+  }
+  
+  .cartIcon svg {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 @media (max-width: 520px) {
