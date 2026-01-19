@@ -8,9 +8,11 @@ export default function Hero() {
       <div className="heroGrid">
         <div className="heroPoster">
           <img
-            src="/images/still-strange-harvest-poster.jpg"
+            src="/images/still-strange-harvest-poster.webp"
             alt="Strange Harvest Poster"
             loading="eager"
+            width="600"
+            height="900"
           />
         </div>
 

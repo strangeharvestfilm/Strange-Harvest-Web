@@ -34,10 +34,10 @@ export const sitecopy = {
       attribution: "Detective Joe Kirby",
     },
     images: [
-      "/images/still-pool.jpg",
-      "/images/still-kitchen.jpg",
-      "/images/still-knife.jpg",
-      "/images/still-handprint.png",
+      "/images/still-pool.webp",
+      "/images/still-kitchen.webp",
+      "/images/still-knife.webp",
+      "/images/still-handprint.webp",
     ],
     stats: [
       { value: "2025", label: "Release Year" },
@@ -52,12 +52,12 @@ export const sitecopy = {
     icons: [
       {
         name: "Rotten Tomatoes",
-        icon: "/images/still-icon-fresh.png",
+        icon: "/images/still-icon-fresh.webp",
         href: "https://www.rottentomatoes.com/m/strange_harvest",
       },
       {
         name: "Letterboxd",
-        icon: "/images/still-icon-letterboxd.png",
+        icon: "/images/still-icon-letterboxd.webp",
         href: "https://letterboxd.com/film/strange-harvest-2024/",
       },
     ],
@@ -122,46 +122,46 @@ export const sitecopy = {
       {
         name: "Hulu",
         href: "https://www.hulu.com/movie/strange-harvest-e931d642-fe34-4b92-b6da-96f4c7573fac",
-        icon: "/images/still-icon-hulu.png",
+        icon: "/images/still-icon-hulu.webp",
       },
     ],
     usca: [
       {
         name: "Apple TV",
         href: "https://tv.apple.com/us/movie/strange-harvest/umc.cmc.4atgf8qjfghsw0w6ki9k7eqch",
-        icon: "/images/still-icon-appletv.png",
+        icon: "/images/still-icon-appletv.webp",
       },
       {
         name: "Amazon",
         href: "https://www.primevideo.com/detail/Strange-Harvest/0GOLHLOCIIRVMO44IB2E0LMNN2",
-        icon: "/images/still-icon-primevideo.png",
+        icon: "/images/still-icon-primevideo.webp",
       },
       {
         name: "Fandango",
         href: "https://athome.fandango.com/content/browse/details/Strange-Harvest/4473508",
-        icon: "/images/still-icon-fandago.png",
+        icon: "/images/still-icon-fandago.webp",
       },
       {
         name: "YouTube",
         href: "https://www.youtube.com/watch?v=XU5edpgV37o",
-        icon: "/images/still-icon-youtube.png",
+        icon: "/images/still-icon-youtube.webp",
       },
       {
         name: "Cosmo",
         href: "https://www.cosmogo.com/#!/search?phrase=strange%20hav",
-        icon: "/images/still-icon-cosmogo.png",
+        icon: "/images/still-icon-cosmogo.webp",
       },
     ],
     intl: [
       {
         name: "Sky Store",
         href: "https://www.skystore.com/product/strange-harvest/5cea96ca-2f66-4c07-9d95-643537650b95",
-        icon: "/images/still-icon-skystore.png",
+        icon: "/images/still-icon-skystore.webp",
       },
       {
         name: "Rakuten TV",
         href: "https://www.rakuten.tv/uk/movies/strange-harvest",
-        icon: "/images/still-rakutentv.png",
+        icon: "/images/still-rakutentv.webp",
       },
     ],
   },
@@ -170,7 +170,7 @@ export const sitecopy = {
     title: "Official Home Video Release",
     productTitle: "Strange Harvest (DVD)",
     description: "Official DVD release distributed by Sony Pictures Home Entertainment. Manufactured on demand.",
-    image: "/images/still-strange-harvest-poster.jpg",
+    image: "/images/still-strange-harvest-poster.webp",
     cta: { label: "View on Amazon", href: "https://www.amazon.com/Strange-Harvest-Stuart-Ortiz/dp/B0FSMGS86V/ref=sr_1_1?crid=3MEPFFGPVKEM4&dib=eyJ2IjoiMSJ9.wKKvBTt3a79y5PdK9kfPjEDogznzPzIjEJhY4NzKGzDmfLB_hGnjjtNctm0t9N8raH6bVMMEEkTgHioXFfqEcgoCzCFly1CQ-K5k0qM9Wcv7XRxOuQuaDQ8D7yNVrOTtCBaq8WB_s1gh-axVW2i1IK6gd_8qTyt_8Lg_mpakl6DnvnRDK6kD4oYHdhPtCI7pNFeaXzamO35EtoyuX71ARS25EPMTEsglBNYP-8LXY5w.t9IPUet8BAUX-k5oYES1X0jiXOfPSMbPAwnbJysWGw8&dib_tag=se&keywords=strange+harvest&qid=1768728090&sprefix=strange+harves%2Caps%2C204&sr=8-1", target: "_blank" },
     disclaimer: "*Sold and fulfilled by Amazon.",
   },
@@ -189,13 +189,13 @@ export const sitecopy = {
         {
           name: "Peter Zizzo",
           role: "Detective Joe Kirby",
-          image: "/images/still-kirby.jpg",
+          image: "/images/still-kirby.webp",
           imdb: "https://www.imdb.com/name/nm0970567/",
         },
         {
           name: "Terri Apple",
           role: "Detective Lexi Taylor",
-          image: "/images/still-taylor.jpg",
+          image: "/images/still-taylor.webp",
           imdb: "https://www.imdb.com/name/nm0032322/",
         },
       ],
