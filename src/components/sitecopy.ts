@@ -60,6 +60,11 @@ export const sitecopy = {
         icon: "/images/still-icon-letterboxd.webp",
         href: "https://letterboxd.com/film/strange-harvest-2024/",
       },
+      {
+        name: "Wikipedia",
+        icon: "/images/Still-icon-wiki.webp",
+        href: "https://en.wikipedia.org/wiki/Strange_Harvest_(film)",
+      },
     ],
     quotes: [
       {
