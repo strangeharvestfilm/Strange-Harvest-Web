@@ -14,7 +14,7 @@ export default function CastCrew() {
           <div className="detectivesGrid">
             {castCrew.leadDetectives.members.map((member, idx) => (
               <a key={idx} href={member.imdb} target="_blank" rel="noopener noreferrer" className="detectiveCard">
-                <img src={member.image} alt={member.name} className="detectiveImage" loading="lazy" width="400" height="600" />
+                <img src={member.image} alt={member.name} className="detectiveImage" loading="lazy" />
                 <h4 className="detectiveName">{member.name}</h4>
                 <p className="detectiveRole">{member.role}</p>
               </a>
