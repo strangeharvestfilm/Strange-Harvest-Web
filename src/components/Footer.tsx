@@ -13,13 +13,13 @@ export default function Footer() {
           <a href="https://www.rottentomatoes.com/m/strange_harvest" target="_blank" rel="noreferrer" aria-label="Rotten Tomatoes">
             <img src="/images/still-icon-tomato.webp" alt="Rotten Tomatoes" className="socialIcon" />
           </a>
-          <a href="https://www.instagram.com/strangeharvestfilm" target="_blank" rel="noreferrer" aria-label="Instagram">
+          <a href="https://www.instagram.com/strangeharvestmovie/" target="_blank" rel="noreferrer" aria-label="Instagram">
             <img src="/images/still-icon-instagram.webp" alt="Instagram" className="socialIcon" />
           </a>
-          <a href="https://www.facebook.com/strangeharvestfilm" target="_blank" rel="noreferrer" aria-label="Facebook">
+          <a href="https://www.facebook.com/Strangeharvestmovie/" target="_blank" rel="noreferrer" aria-label="Facebook">
             <img src="/images/still-icon-facebook.webp" alt="Facebook" className="socialIcon" />
           </a>
-          <a href="https://www.twitter.com/strangeharvestfilm" target="_blank" rel="noreferrer" aria-label="X (Twitter)">
+          <a href="https://x.com/Strange_Harvest" target="_blank" rel="noreferrer" aria-label="X (Twitter)">
             <img src="/images/still-icon-twitter.webp" alt="X (Twitter)" className="socialIcon noFilter" />
           </a>
           <a href="https://www.youtube.com/@strangeharvestfilm" target="_blank" rel="noreferrer" aria-label="YouTube">
